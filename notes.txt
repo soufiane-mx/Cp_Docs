@@ -1,0 +1,65 @@
+HASHMAP:
+unordered_map<int, int> mp;
+Le truc MAGIQUE : mp[key]++
+unordered_map<int,int> freq;
+for(int x : nums){
+    freq[x]++;
+}
+count() : est-ce que la clé existe ?
+mp.count(x)
+FIND():
+ mp.find(x) != mp.end()
+
+parcourir:
+for(auto [key, value] : mp){
+    cout << key << " " << value << endl;
+}
+ou
+for(auto i : mp){
+    i.first==> key
+    i.second==> value
+}
+TRI par value :
+unordered_map<int, int> mp = {
+    {5, 3},
+    {2, 7},
+    {9, 1}
+};
+Sort par value decroissant :
+vector<pair<int,int>> v(mp.begin(), mp.end());
+sort(v.begin(), v.end(), [](auto &a, auto &b) {
+    return a.second > b.second;
+});
+
+
+SET:
+
+vector<int> v = {5, 2, 8, 2, 5};
+
+set<int> s(v.begin(), v.end());
+
+accelere lexecution de programme et eviter TLE:
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+
+
+find a substring in a string:
+string s = "hello world";
+
+if (s.find("world") != string::npos) {
+    cout << "trouve";
+}
+convertir char to int ('4' ==> 4):
+int i='4';
+int j=i-'0'; //4
+
+
+MODULO donne le RESTE DE DIVISON DE A/B
+DIVISION A/B DONNE COMBIEN DE FOIS B DANS A
+
+A= B*(A/B)+ A%B
+
+LIRE ONE LIGNE EN VECTOR:
+while(cin>>y){
+	     v.push_back(y);
+	 }

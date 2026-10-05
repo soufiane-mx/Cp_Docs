@@ -1,0 +1,19 @@
+COMMENT COUVRER TOUS LES COUPLES DANS UN ARRAY:
+1-sort
+2-two pointers
+sort(nums.begin(), nums.end());
+
+int left = 0;
+int right = nums.size() - 1;
+
+while (left < right) {
+    // travailler avec nums[left] et nums[right]
+
+    if (condition)
+        left++;
+    else
+        right--;
+}
+SLIDING WINDOW Technique:
+1-a contiguous part: subarray/substring...
+
