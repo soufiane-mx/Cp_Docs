@@ -63,3 +63,8 @@ LIRE ONE LIGNE EN VECTOR:
 while(cin>>y){
 	     v.push_back(y);
 	 }
+
+
+wahd astuce :
+somme des nbres paire tjrs paire 
+somme des nbres impaires depend de combien de parité de combien de nbre impaire on somme
